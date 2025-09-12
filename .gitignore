@@ -1,0 +1,61 @@
+# ---------------------------------
+# Sensitive / Private Information
+# ---------------------------------
+# SSH keys and configs
+.ssh/*
+!.ssh/config      # (keep config if you want to share it)
+
+# GPG keys
+.gnupg/
+
+# Authentication files
+.netrc
+.git-credentials
+
+# ---------------------------------
+# Shell / Terminal
+# ---------------------------------
+.bash_history
+.zsh_history
+.lesshst
+.python_history
+
+# ---------------------------------
+# Package Managers
+# ---------------------------------
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Rust / Cargo
+target/
+
+# ---------------------------------
+# OS / Editor Junk
+# ---------------------------------
+# macOS
+.DS_Store
+
+# Linux
+.cache/
+.local/share/Trash/
+
+# Editors
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# ---------------------------------
+# Other
+# ---------------------------------
+Downloads/
+Desktop/
