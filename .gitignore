@@ -43,6 +43,7 @@ target/
 # ---------------------------------
 # macOS
 .DS_Store
+**/.DS_Store
 
 # Linux
 .cache/
