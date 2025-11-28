@@ -1,14 +1,7 @@
 return {
-	--{
-	--  "williamboman/mason-lspconfig.nvim",
-	--  config = function()
-	--    require("mason").setup(opts)
-	--  end
-	--},
 	-- cmdline tools and lsp servers
 	{
-
-		"williamboman/mason.nvim",
+		"mason-org/mason.nvim",
 		cmd = "Mason",
 		keys = { { "<leader>cm", "<cmd>Mason<cr>", desc = "Mason" } },
 		build = ":MasonUpdate",
@@ -21,11 +14,7 @@ return {
 					package_uninstalled = "✗",
 				},
 			},
-			ensure_installed = {
-				--"stylua",
-				--"shfmt",
-				-- "flake8",
-			},
+			ensure_installed = {},
 		},
 		---@param opts MasonSettings | {ensure_installed: string[]}
 		config = function(_, opts)

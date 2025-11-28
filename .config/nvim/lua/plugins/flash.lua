@@ -1,12 +1,12 @@
 return {
-  -- Flash enhances the built-in search functionality by showing labels
-  -- at the end of each match, letting you quickly jump to a specific
-  -- location.
-  {
-    "folke/flash.nvim",
-    event = "VeryLazy",
-    ---@type Flash.Config
-    opts = {},
+	-- Flash enhances the built-in search functionality by showing labels
+	-- at the end of each match, letting you quickly jump to a specific
+	-- location.
+	{
+		"folke/flash.nvim",
+		event = "VeryLazy",
+		---@type Flash.Config
+		opts = {},
     -- stylua: ignore
     keys = {
       { "s", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
@@ -15,8 +15,8 @@ return {
       { "R", mode = { "o", "x" }, function() require("flash").treesitter_search() end, desc = "Treesitter Search" },
       { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
     },
-    config = function()
-      require("flash").setup({})
-    end
-  }
+		config = function()
+			require("flash").setup({})
+		end,
+	},
 }

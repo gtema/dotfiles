@@ -1,3 +1,4 @@
+-- Code(buffer) formatters
 return {
 	"stevearc/conform.nvim",
 	event = { "BufReadPre", "BufNewFile" },
@@ -9,8 +10,12 @@ return {
 		-- Define your formatters
 		formatters_by_ft = {
 			lua = { "stylua" },
-			python = { "ruff", "isort" },
+			python = { "ruff_format", "ruff_fix", "ruff_organize_imports" },
+			rust = { "rustfmt" },
 			javascript = { "prettierd", "prettier", stop_after_first = true },
+			markdown = { "prettierd", "prettier", stop_after_first = true },
+			rst = { "prettierd", "prettier", stop_after_first = true },
+			rego = { "opa_fmt" },
 		},
 		-- Set default options
 		default_format_opts = {
