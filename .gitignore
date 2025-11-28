@@ -54,6 +54,7 @@ target/
 *.swo
 .idea/
 .vscode/
+.config/nvim/lazy-lock.json
 
 # ---------------------------------
 # Other

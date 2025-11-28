@@ -3,7 +3,7 @@ return {
 		"neovim/nvim-lspconfig",
 		dependencies = {
 			"mason-org/mason.nvim",
-			"mason-org/mason-lspconfig-settings/mason-lspconfig.nvim",
+			"mason-org/mason-lspconfig.nvim",
 		},
 		config = function()
 			local capabilities = vim.lsp.protocol.make_client_capabilities()
