@@ -25,6 +25,9 @@ return {
 		-- format_on_save = { timeout_ms = 500 },
 		-- Customize formatters
 		formatters = {
+                        prettier = {
+                                append_args = { "--prose-wrap", "always" },
+                        },
 			shfmt = {
 				append_args = { "-i", "2" },
 			},
