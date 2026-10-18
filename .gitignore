@@ -61,3 +61,9 @@ target/
 # ---------------------------------
 Downloads/
 Desktop/
+
+.opencode/
+.antigravitycli/
+.claude/
+claude/**
+worktrees
